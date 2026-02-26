@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Tell Tailwind we want to reference utilities */
+@reference "tailwindcss";
+
+@layer components {
+  .section {
+    @apply w-full mx-auto flex flex-col items-center;
+  }
+
+  .section-title {
+    @apply text-center font-bold;
+    background: linear-gradient(to right, #00d4ff, #2563eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700;
+  }
+
+  .btn-primary {
+    @apply text-white rounded-full font-semibold;
+    background: linear-gradient(to right, #06b6d4, #2563eb);
+  }
+
+  .btn-outline {
+    @apply rounded-full font-semibold border-2 border-cyan-500 text-cyan-500;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-to-r {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+}
+
+
