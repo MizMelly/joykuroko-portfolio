@@ -41,8 +41,8 @@ export default function Home({ darkMode }) {
 const nameClass = darkMode ? "text-white font-extrabold" : "text-black font-extrabold";
   
 const nameShadow = darkMode
-  ? "0 0 8px #fef08a, 0 0 16px #facc15, 0 0 24px #eab308" // yellow glow
-  : "0 4px 12px rgba(0,0,0,0.25)";
+  ? "0 0 8px #fef08a, 0 0 16px #facc15, 0 0 24px #eab308" 
+  : "0 4px 12px rgba(0,0,0,0.2)";
 
   const buttonPrimary = darkMode
     ? "bg-gradient-to-r from-indigo-600 to-violet-600 text-white hover:brightness-110 hover:shadow-indigo-500/40"

@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 import './index.css'
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
   const [scrolled, setScrolled] = useState(false)
 
   // ✅ Apply dark mode to <html>
