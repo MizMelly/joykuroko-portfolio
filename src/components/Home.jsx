@@ -87,7 +87,7 @@ const nameShadow = darkMode
   repeat={0}
   className="font-extrabold"
   style={{
-    color: "#ffffff", // bright white
+    color: "#ffffff", 
     textShadow: nameShadow,
     fontSize: "3rem",
   }}
