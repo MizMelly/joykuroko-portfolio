@@ -97,7 +97,7 @@ export default function Contact({ darkMode = true }) {
                   <a href="mailto:meryemebrahim46@gmail.com" className={`hover:text-yellow-400 transition ${
                     darkMode ? 'text-gray-200' : 'text-gray-800'
                   }`}>
-                    meryemebrahim46@gmail.com
+                    jkuroko@gmail.com
                   </a>
                 </div>
               </div>
