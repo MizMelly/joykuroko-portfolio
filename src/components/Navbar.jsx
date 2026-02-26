@@ -56,21 +56,23 @@ const Navbar = ({ scrolled, darkMode, setDarkMode }) => {
             ))}
           </ul>
 
-          {/* Dark Mode Toggle */}
+          {/* Desktop Dark Mode Toggle */}
           <motion.button
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setDarkMode(!darkMode)}
             className={`
-              p-2 rounded-full transition
-              ${darkMode ? "hover:bg-gray-800/50" : "hover:bg-gray-200/50"}
+              p-3 rounded-full transition-all duration-300
+              ${darkMode 
+                ? "bg-gray-800/70 hover:bg-gray-700/70 text-yellow-400 shadow-md shadow-gray-900/30" 
+                : "bg-gray-200/70 hover:bg-gray-300/70 text-gray-900 shadow-md shadow-gray-400/30"}
             `}
             aria-label="Toggle theme"
           >
             {darkMode ? (
-              <FaSun className="text-yellow-400 text-xl" />
+              <FaSun className="text-xl" />
             ) : (
-              <FaMoon className="text-gray-700 text-xl" />
+              <FaMoon className="text-xl" />
             )}
           </motion.button>
         </div>
@@ -117,17 +119,24 @@ const Navbar = ({ scrolled, darkMode, setDarkMode }) => {
                 ))}
               </ul>
 
-              {/* Mobile Dark Mode Toggle */}
-              <button
+              {/* Mobile Dark Mode Toggle – text now clearly visible in BOTH modes */}
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 onClick={() => {
                   setDarkMode(!darkMode);
                   closeMenu();
                 }}
-                className="w-full py-3 px-6 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-medium flex items-center justify-center gap-3"
+                className={`
+                  w-full py-4 px-6 rounded-full font-medium flex items-center justify-center gap-3 transition-all duration-300 border
+                  ${darkMode 
+                    ? "bg-gray-800 text-yellow-300 border-gray-700 hover:bg-gray-700" 
+                    : "bg-gray-100 text-gray-900 border-gray-300 hover:bg-gray-200"}
+                `}
               >
                 {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
-                <FaSun />
-              </button>
+                {darkMode ? <FaSun /> : <FaMoon />}
+              </motion.button>
             </div>
           </motion.div>
         )}
