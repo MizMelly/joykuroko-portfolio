@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion';
 import { FaNodeJs, FaJs, FaReact } from 'react-icons/fa';
-import { SiNextdotjs, SiMongodb, SiTailwindcss } from 'react-icons/si';
+import {
+  SiReact,
+  SiFlutter,
+  SiTailwindcss,
+  SiPostgresql,
+  SiExpress,
+} from "react-icons/si";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -8,12 +14,14 @@ const fadeInUp = {
 };
 
 const stackItems = [
-  { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+  { name: 'Express.js', icon: SiExpress, color: '#000000' },
   { name: 'React.js', icon: FaReact, color: '#61DAFB' },
   { name: 'JavaScript', icon: FaJs, color: '#F7DF1E' },
   { name: 'Node.js', icon: FaNodeJs, color: '#68A063' },
-  { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+  { name: 'PostgreSQL', icon: SiPostgresql, color: '#47A248' },
   { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#38B2AC' },
+   {name:'React Native', icon: FaReact, color: "#61DAFB"},
+      { name: 'Flutter', icon: SiFlutter, color: "#02569B"},
 ];
 
 const expertiseItems = [

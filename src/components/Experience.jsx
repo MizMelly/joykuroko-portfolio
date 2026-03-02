@@ -101,132 +101,112 @@ export default function Experience({ darkMode }) {
 
         {/* Experience Card */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className={`max-w-4xl mx-auto rounded-2xl p-8 mb-10 border backdrop-blur-md
-            transition-colors ${
-              darkMode
-                ? "bg-gray-900/80 border-blue-500/20 text-gray-100"
-                : "bg-white/90 border-gray-200 text-black shadow-lg"
-            }`}
-        >
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Frontend Developer Intern
-          </h3>
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className={`max-w-4xl mx-auto rounded-2xl p-8 mb-10 border backdrop-blur-md transition-colors ${
+    darkMode
+      ? "bg-gray-900/80 border-blue-500/20 text-gray-100"
+      : "bg-white/90 border-gray-200 text-black shadow-lg"
+  }`}
+>
+  <h3 className="text-2xl md:text-3xl font-bold mb-4">
+    Frontend Developer Intern
+  </h3>
 
-          <p className={`${darkMode ? "text-gray-400" : "text-black"} mb-6`}>
-            2026 • Remote
-          </p>
+  <p className={`${darkMode ? "text-gray-400" : "text-black"} mb-6`}>
+    2026 • Remote at Trueminds Innovations Ltd
+  </p>
 
-          <ul
-            className={`space-y-3 ${
-              darkMode ? "text-gray-300" : "text-black"
-            }`}
-          >
-            <li>› Built responsive apps with React & TypeScript</li>
-            <li>› Worked in agile teams & code reviews</li>
-            <li>› Improved performance by 30%</li>
-            <li>› Used Git & CI/CD pipelines</li>
-          </ul>
-        </motion.div>
+  <ul className={`space-y-3 ${darkMode ? "text-gray-300" : "text-black"}`}>
+    <li>› Built responsive web applications using React & TypeScript</li>
+    <li>› Designed interactive UI components and reusable modules</li>
+    <li>› Collaborated in Agile teams, participated in code reviews</li>
+    <li>› Optimized app performance and implemented best practices</li>
+  </ul>
+</motion.div>
 
-         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className={`max-w-4xl mx-auto rounded-2xl p-8 mb-10 border backdrop-blur-md
-            transition-colors ${
-              darkMode
-                ? "bg-gray-900/80 border-blue-500/20 text-gray-100"
-                : "bg-white/90 border-gray-200 text-black shadow-lg"
-            }`}
-        >
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Full-Stack Web/Mobile Developer Intern
-          </h3>
+<motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className={`max-w-4xl mx-auto rounded-2xl p-8 mb-10 border backdrop-blur-md transition-colors ${
+    darkMode
+      ? "bg-gray-900/80 border-blue-500/20 text-gray-100"
+      : "bg-white/90 border-gray-200 text-black shadow-lg"
+  }`}
+>
+  <h3 className="text-2xl md:text-3xl font-bold mb-4">
+    Full-Stack Web/Mobile Developer Intern
+  </h3>
 
-          <p className={`${darkMode ? "text-gray-400" : "text-black"} mb-6`}>
-            2025 • on-site
-          </p>
+  <p className={`${darkMode ? "text-gray-400" : "text-black"} mb-6`}>
+    2025 • On-site at Lions Gate Technologies Ltd
+  </p>
 
-          <ul
-            className={`space-y-3 ${
-              darkMode ? "text-gray-300" : "text-black"
-            }`}
-          >
-            <li>› Built responsive apps with React & TypeScript</li>
-            <li>› Worked in agile teams & code reviews</li>
-            <li>› Improved performance by 30%</li>
-            <li>› Used Git & CI/CD pipelines</li>
-          </ul>
-        </motion.div>
+  <ul className={`space-y-3 ${darkMode ? "text-gray-300" : "text-black"}`}>
+    <li>› Developed web apps with React & Node.js and mobile apps with React Native & Flutter</li>
+    <li>› Built backend services using Express.js and PostgreSQL</li>
+    <li>› Improved application performance and reliability by 90%</li>
+    <li>› Managed version control and CI/CD pipelines with Git</li>
+  </ul>
+</motion.div>
 
-         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className={`max-w-4xl mx-auto rounded-2xl p-8 mb-10 border backdrop-blur-md
-            transition-colors ${
-              darkMode
-                ? "bg-gray-900/80 border-blue-500/20 text-gray-100"
-                : "bg-white/90 border-gray-200 text-black shadow-lg"
-            }`}
-        >
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Head Developer/Training Facilitator
-          </h3>
+<motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className={`max-w-4xl mx-auto rounded-2xl p-8 mb-10 border backdrop-blur-md transition-colors ${
+    darkMode
+      ? "bg-gray-900/80 border-blue-500/20 text-gray-100"
+      : "bg-white/90 border-gray-200 text-black shadow-lg"
+  }`}
+>
+  <h3 className="text-2xl md:text-3xl font-bold mb-4">
+    Head Developer / Training Facilitator
+  </h3>
 
-          <p className={`${darkMode ? "text-gray-400" : "text-black"} mb-6`}>
-            2024 • On-site
-          </p>
+  <p className={`${darkMode ? "text-gray-400" : "text-black"} mb-6`}>
+    2024 • On-site at BIGT Infotech Solutions Ltd
+  </p>
 
-          <ul
-            className={`space-y-3 ${
-              darkMode ? "text-gray-300" : "text-black"
-            }`}
-          >
-            <li>› Built responsive apps with React & TypeScript</li>
-            <li>› Worked in agile teams & code reviews</li>
-            <li>› Improved performance by 30%</li>
-            <li>› Used Git & CI/CD pipelines</li>
-          </ul>
-        </motion.div>
+  <ul className={`space-y-3 ${darkMode ? "text-gray-300" : "text-black"}`}>
+    <li>› Led a team to build internal and client web applications</li>
+    <li>› Conducted workshops and mentorship for junior developers</li>
+    <li>› Managed project timelines and Agile workflows</li>
+    <li>› Ensured code quality and implemented development best practices</li>
+  </ul>
 
-         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className={`max-w-4xl mx-auto rounded-2xl p-8 mb-10 border backdrop-blur-md
-            transition-colors ${
-              darkMode
-                ? "bg-gray-900/80 border-blue-500/20 text-gray-100"
-                : "bg-white/90 border-gray-200 text-black shadow-lg"
-            }`}
-        >
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Frontend Developer Intern
-          </h3>
+</motion.div>
+<motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className={`max-w-4xl mx-auto rounded-2xl p-8 mb-10 border backdrop-blur-md transition-colors ${
+    darkMode
+      ? "bg-gray-900/80 border-blue-500/20 text-gray-100"
+      : "bg-white/90 border-gray-200 text-black shadow-lg"
+  }`}
+>
+  <h3 className="text-2xl md:text-3xl font-bold mb-4">
+    Frontend Developer Intern
+  </h3>
 
-          <p className={`${darkMode ? "text-gray-400" : "text-black"} mb-6`}>
-            2024 • on-site
-          </p>
+  <p className={`${darkMode ? "text-gray-400" : "text-black"} mb-6`}>
+    2024 • On-site at Coriftech Solutions Ltd
+  </p>
 
-          <ul
-            className={`space-y-3 ${
-              darkMode ? "text-gray-300" : "text-black"
-            }`}
-          >
-            <li>› Built responsive apps with React & TypeScript</li>
-            <li>› Worked in agile teams & code reviews</li>
-            <li>› Improved performance by 30%</li>
-            <li>› Used Git & CI/CD pipelines</li>
-          </ul>
-        </motion.div>
+  <ul className={`space-y-3 ${darkMode ? "text-gray-300" : "text-black"}`}>
+    <li>› Developed responsive web pages using HTML, CSS, Bootstrap, and Sass</li>
+    <li>› Added interactivity with JavaScript for dynamic UI features</li>
+    <li>› Collaborated with designers to implement pixel-perfect layouts</li>
+    <li>› Tested websites across browsers for compatibility and responsiveness</li>
+  </ul>
+</motion.div>
 
         {/* Download Button */}
         <motion.div

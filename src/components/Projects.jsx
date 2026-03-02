@@ -10,8 +10,19 @@ const projects = [
     metric: "90/100",
     complexity: "Advanced",
     year: "2026",
-    liveDemo: "https://sales-demo.yourdomain.com",  
+    liveDemo: "https://distrohub-frontend.onrender.com/",  
   },
+  {
+  title: "Restaurant",
+  desc:
+    "A modern restaurant website showcasing menu items, services, and branding with smooth animations and a responsive, user-friendly interface.",
+  tech: ["React", "Tailwind CSS", "Framer Motion"],
+  performance: "96%",
+  metric: "UX Focused",
+  complexity: "Intermediate",
+  year: "2026",
+  liveDemo: "https://dashing-basbousa-73d3af.netlify.app/",
+},
  {
   title: "Fintech",
   desc:
@@ -23,8 +34,9 @@ const projects = [
   year: "2025",
   liveDemo: "https://sales-demo.yourdomain.com",  
 },
+
   {
-  title: "E-Commerce Hair Shop",
+  title: "Hair-Shop",
   desc:
     "An online hair store with product listings, product details, shopping cart functionality, user authentication, order placement, and seamless backend API integration.",
   tech: ["React", "Tailwind CSS", "Node.js", "PostgreSQL", "Express"],
@@ -32,7 +44,7 @@ const projects = [
   metric: "12+ Features",
   complexity: "Intermediate",
   year: "2025",
-  liveDemo: "https://sales-demo.yourdomain.com",  
+  liveDemo: "https://fintech-c6cs.onrender.com/",  
   },
   {
     title: "Portfolio Builder",
@@ -45,21 +57,11 @@ const projects = [
     year: "2024",
       liveDemo: "https://portfolio-builder.yourdomain.com",
   },
-    {
-    title: "Resturant",
-    desc:
-      "A modern portfolio builder that allows developers to create, customize, and deploy personal portfolios easily.",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
-    performance: "96%",
-    metric: "UX Focused",
-    complexity: "Intermediate",
-    year: "2024",
-      liveDemo: "https://portfolio-builder.yourdomain.com",
-  },
+    
 ];
 
 export default function Projects({ darkMode }) {
-  /* THEME VARIABLES — SAME STYLE AS ABOUT */
+
   const sectionBg = darkMode ? "bg-[#0b1220]" : "bg-white";
   const cardBg = darkMode ? "bg-[#0f172a] border-blue-500/20" : "bg-white border-gray-200";
   const textPrimary = darkMode ? "text-white" : "text-gray-900";
