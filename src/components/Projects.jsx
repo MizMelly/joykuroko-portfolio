@@ -2,34 +2,37 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Netflix Clone 2025",
+    title: "Distributor-App",
     desc:
-      "Modern Netflix replica with advanced features, real-time streaming simulation, and personalized content recommendations.",
-    tech: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Express"],
+      "Modern Sales & Distribution System (User Module) developed the user-facing mobile interface using Flutter,integrating with a Node.js backend and PostgreSQL database for order and sales interactions.with advanced features, real-time streaming simulation, and personalized content recommendations.",
+    tech: ["Flutter", "Node.js", "PostgreSQL", "Express"],
     performance: "95%",
     metric: "90/100",
     complexity: "Advanced",
-    year: "2025",
+    year: "2026",
+    liveDemo: "https://sales-demo.yourdomain.com",  
   },
+ {
+  title: "Fintech",
+  desc:
+    "A fully functional banking application with secure user authentication, account dashboards, balance tracking, fund transfers, transaction history, and seamless backend API integration.",
+  tech: ["React Native","Node.js", "PostgreSQL", "Express"],
+  performance: "92%",
+  metric: "15+ Features",
+  complexity: "Advanced",
+  year: "2025",
+  liveDemo: "https://sales-demo.yourdomain.com",  
+},
   {
-    title: "Amazon Clone",
-    desc:
-      "Full-stack e-commerce platform with shopping cart, user authentication, and payment integration.",
-    tech: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Express"],
-    performance: "92%",
-    metric: "15+ Features",
-    complexity: "Advanced",
-    year: "2025",
-  },
-  {
-    title: "Jadoo Travel",
-    desc:
-      "Beautiful travel booking platform with destination discovery, booking system, and travel guides.",
-    tech: ["React", "Tailwind CSS", "JavaScript"],
-    performance: "98%",
-    metric: "Premium Design",
-    complexity: "Intermediate",
-    year: "2025",
+  title: "E-Commerce Hair Shop",
+  desc:
+    "An online hair store with product listings, product details, shopping cart functionality, user authentication, order placement, and seamless backend API integration.",
+  tech: ["React", "Tailwind CSS", "Node.js", "PostgreSQL", "Express"],
+  performance: "90%",
+  metric: "12+ Features",
+  complexity: "Intermediate",
+  year: "2025",
+  liveDemo: "https://sales-demo.yourdomain.com",  
   },
   {
     title: "Portfolio Builder",
@@ -40,6 +43,18 @@ const projects = [
     metric: "UX Focused",
     complexity: "Intermediate",
     year: "2024",
+      liveDemo: "https://portfolio-builder.yourdomain.com",
+  },
+    {
+    title: "Resturant",
+    desc:
+      "A modern portfolio builder that allows developers to create, customize, and deploy personal portfolios easily.",
+    tech: ["React", "Tailwind CSS", "Framer Motion"],
+    performance: "96%",
+    metric: "UX Focused",
+    complexity: "Intermediate",
+    year: "2024",
+      liveDemo: "https://portfolio-builder.yourdomain.com",
   },
 ];
 
@@ -147,18 +162,25 @@ export default function Projects({ darkMode }) {
 
               {/* BUTTONS */}
               <div className="flex gap-3 mt-auto">
-                <button
-                  className={`flex-1 py-2 rounded-lg border transition ${
-                    darkMode
-                      ? "bg-[#020617] text-gray-300 border-blue-500/20"
-                      : "bg-gray-100 text-gray-700 border-gray-300"
-                  }`}
-                >
-                  Code
-                </button>
-                <button className="flex-1 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-400 transition shadow-md">
-                  Live Demo
-                </button>
+  <button
+    className={`flex-1 py-2 rounded-lg border transition ${
+      darkMode
+        ? "bg-[#020617] text-gray-300 border-blue-500/20 hover:bg-gray-800"
+        : "bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200"
+    }`}
+    onClick={() => window.open(`https://github.com/MizMelly/${project.title.toLowerCase().replace(/\s+/g, '-')}`, "_blank")}
+  >
+    Code
+  </button>
+
+  {project.liveDemo && (
+    <button
+      className="flex-1 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition shadow-md"
+      onClick={() => window.open(project.liveDemo, "_blank")}
+    >
+      Live Demo
+    </button>
+  )}
               </div>
             </div>
           </motion.div>
