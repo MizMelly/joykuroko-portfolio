@@ -10,7 +10,7 @@ const projects = [
     metric: "90/100",
     complexity: "Advanced",
     year: "2026",
-    liveDemo: "https://distrohub-frontend.onrender.com/",  
+    liveDemo: "https://distrohub-xi.vercel.app/",  
   },
   {
   title: "Restaurant",
