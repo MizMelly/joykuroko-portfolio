@@ -23,6 +23,17 @@ const projects = [
   year: "2026",
   liveDemo: "https://dashing-basbousa-73d3af.netlify.app/",
 },
+{
+  title: "School Assignment Portal",
+  desc:
+    "A modern school portal for managing student information, grades, and communication between teachers and parents.",
+  tech: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Express"],
+  performance: "90%",
+  metric: "12+ Features",
+  complexity: "Intermediate",
+  year: "2026",
+  liveDemo: "https://frontend-repo-alpha-three.vercel.app/",  
+  },
  {
   title: "Fintech",
   desc:
