@@ -13,27 +13,17 @@ const projects = [
     liveDemo: "https://distrohub-xi.vercel.app/",  
   },
   {
-  title: "Restaurant",
+  title: "A School Training Portal",
   desc:
-    "A modern restaurant website showcasing menu items, services, and branding with smooth animations and a responsive, user-friendly interface.",
-  tech: ["React", "Tailwind CSS", "Framer Motion"],
-  performance: "96%",
-  metric: "UX Focused",
-  complexity: "Intermediate",
-  year: "2026",
-  liveDemo: "https://dashing-basbousa-73d3af.netlify.app/",
-},
-{
-  title: "School Assignment Portal",
-  desc:
-    "A modern school portal for managing student information, grades, and communication between teachers and parents.",
+    "A modern training portal for managing courses, enrollments, and user progress tracking.",
   tech: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Express"],
   performance: "90%",
   metric: "12+ Features",
   complexity: "Intermediate",
   year: "2026",
-  liveDemo: "https://frontend-repo-alpha-three.vercel.app/",  
+  liveDemo: "https://team-delta-lms.vercel.app/",  
   },
+  
  {
   title: "Fintech",
   desc:
@@ -43,7 +33,40 @@ const projects = [
   metric: "15+ Features",
   complexity: "Advanced",
   year: "2025",
-  liveDemo: "https://sales-demo.yourdomain.com",  
+  liveDemo: "https://github.com/MizMelly/Fintech",  
+},
+{
+  title: "LOUDAM – Complaint Management Platform",
+  desc:
+    "A full-stack complaint management system that allows users to file, track, and manage complaints with real-time status updates and admin oversight.",
+  tech: ["React", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "JWT", "Multer"],
+  performance: "98%",
+  metric: "System Efficiency",
+  complexity: "Advanced",
+  year: "2026",
+  liveDemo: "https://github.com/MizMelly/Loudam",
+},
+{
+  title: "SIMBA – Dog Pet HMO",
+  desc:
+    "A pet healthcare management platform designed for dog owners to manage pet health records, HMO plans, appointments, and veterinary services efficiently.",
+  tech: ["React Native", "Node.js", "Express.js", "PostgreSQL"],
+  performance: "96%",
+  metric: "Health Tracking Efficiency",
+  complexity: "Advanced",
+  year: "2025",
+  liveDemo: "https://simba-inky.vercel.app/",
+},
+  {
+  title: "Restaurant",
+  desc:
+    "A modern restaurant website showcasing menu items, services, and branding with smooth animations and a responsive, user-friendly interface.",
+  tech: ["React", "Tailwind CSS", "Framer Motion"],
+  performance: "96%",
+  metric: "UX Focused",
+  complexity: "Intermediate",
+  year: "2026",
+  liveDemo: "https://dashing-basbousa-73d3af.netlify.app/",
 },
 
   {
@@ -56,17 +79,6 @@ const projects = [
   complexity: "Intermediate",
   year: "2025",
   liveDemo: "https://fintech-c6cs.onrender.com/",  
-  },
-  {
-    title: "Portfolio Builder",
-    desc:
-      "A modern portfolio builder that allows developers to create, customize, and deploy personal portfolios easily.",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
-    performance: "96%",
-    metric: "UX Focused",
-    complexity: "Intermediate",
-    year: "2024",
-      liveDemo: "https://portfolio-builder.yourdomain.com",
   },
     
 ];
@@ -131,17 +143,17 @@ export default function Projects({ darkMode }) {
             </div>
 
             {/* IMAGE */}
-            <div className="h-40 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center">
+            <div className="h-40 bg-linear-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center">
               <span className="text-4xl text-blue-500">⚛️</span>
             </div>
 
             {/* CONTENT */}
-            <div className="flex flex-col flex-grow p-6">
+            <div className="flex flex-col grow p-6">
               <h3 className={`text-lg font-bold mb-2 ${textPrimary}`}>
                 {project.title}
               </h3>
 
-              <p className={`text-sm mb-4 flex-grow ${textSecondary}`}>
+              <p className={`text-sm mb-4 grow ${textSecondary}`}>
                 {project.desc}
               </p>
 

@@ -22,8 +22,8 @@ export default function Experience({ darkMode }) {
         transition-colors duration-300
         ${
           darkMode
-            ? "bg-gradient-to-b from-black via-[#0a0a1f] to-black"
-            : "bg-gradient-to-b from-gray-50 via-white to-gray-100"
+            ? "bg-linear-to-b from-black via-[#0a0a1f] to-black"
+            : "bg-linear-to-b from-gray-50 via-white to-gray-100"
         }
       `}
     >
