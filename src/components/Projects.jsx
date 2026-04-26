@@ -1,18 +1,19 @@
 import { motion } from "framer-motion";
 
 const projects = [
+  
   {
-    title: "Distributor-App",
-    desc:
-      "Modern Sales & Distribution System (User Module) developed the user-facing mobile interface using Flutter,integrating with a Node.js backend and PostgreSQL database for order and sales interactions.with advanced features, real-time streaming simulation, and personalized content recommendations.",
-    tech: ["Flutter", "Node.js", "PostgreSQL", "Express"],
-    performance: "95%",
-    metric: "90/100",
-    complexity: "Advanced",
-    year: "2026",
-    liveDemo: "https://distrohub-xi.vercel.app/",  
-  },
-  {
+  title: "LOUDAM – Complaint Management Platform",
+  desc:
+    "A full-stack complaint management system that allows users to file, track, and manage complaints with real-time status updates and admin oversight.",
+  tech: ["React", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "JWT", "Multer"],
+  performance: "98%",
+  metric: "System Efficiency",
+  complexity: "Advanced",
+  year: "2026",
+  liveDemo: "https://loudamnaija.com/",
+},
+ {
   title: "A School Training Portal",
   desc:
     "A modern training portal for managing courses, enrollments, and user progress tracking.",
@@ -23,7 +24,17 @@ const projects = [
   year: "2026",
   liveDemo: "https://team-delta-lms.vercel.app/",  
   },
-  
+  {
+    title: "Distributor-App",
+    desc:
+      "Modern Sales & Distribution System (User Module) developed the user-facing mobile interface using Flutter,integrating with a Node.js backend and PostgreSQL database for order and sales interactions.with advanced features, real-time streaming simulation, and personalized content recommendations.",
+    tech: ["Flutter", "Node.js", "PostgreSQL", "Express"],
+    performance: "95%",
+    metric: "90/100",
+    complexity: "Advanced",
+    year: "2026",
+    liveDemo: "https://distrohub-xi.vercel.app/",  
+  }, 
  {
   title: "Fintech",
   desc:
@@ -35,17 +46,7 @@ const projects = [
   year: "2025",
   liveDemo: "https://github.com/MizMelly/Fintech",  
 },
-{
-  title: "LOUDAM – Complaint Management Platform",
-  desc:
-    "A full-stack complaint management system that allows users to file, track, and manage complaints with real-time status updates and admin oversight.",
-  tech: ["React", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "JWT", "Multer"],
-  performance: "98%",
-  metric: "System Efficiency",
-  complexity: "Advanced",
-  year: "2026",
-  liveDemo: "https://github.com/MizMelly/Loudam",
-},
+
 {
   title: "SIMBA – Dog Pet HMO",
   desc:
